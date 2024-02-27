@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-family-headings: 'Abril Fatface', serif;
+  --font-family-base: 'Poppins', sans-serif;
+
+  /* color scheme generated using https://material-foundation.github.io/material-theme-builder/ */
+
+  --surface: #fff9ee;
+  --surface-container: #f4eddf;
+  --on-surface: #1e1b13;
+  --on-surface-variant: #4b4739;
+
+  --primary: #6d5e0f;
+  --on-primary: #ffffff;
+  --primary-container: #f8e287;
+  --on-primary-container: #221b00;
+
+  --secondary: #665e40;
+  --on-secondary: #ffffff;
+  --secondary-container: #eee2bc;
+  --on-secondary-container: #211b04;
+
+  --tertiary: #43664e;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #c5ecce;
+  --on-tertiary-container: #00210f;
+
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #410002;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #15130b;
+    --surface-container: #222017;
+    --on-surface: #e8e2d4;
+    --on-surface-variant: #cdc6b4;
+
+    --primary: #dbc66e;
+    --on-primary: #3a3000;
+    --primary-container: #534600;
+    --on-primary-container: #f8e287;
+
+    --secondary: #d1c6a1;
+    --on-secondary: #363016;
+    --secondary-container: #4e472a;
+    --on-secondary-container: #eee2bc;
+
+    --tertiary: #a9d0b3;
+    --on-tertiary: #143723;
+    --tertiary-container: #2c4e38;
+    --on-tertiary-container: #c5ecce;
+
+    --error: #ffb4ab;
+    --on-error: #690005;
+    --error-container: #93000a;
+    --on-error-container: #ffdad6;
+  }
+}

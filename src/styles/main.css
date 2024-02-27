@@ -1,0 +1,157 @@
+@import url('./variables.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 9999px;
+  border: none;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  background-color: var(--surface-container);
+  color: var(--on-surface);
+  display: inline-block;
+}
+
+button {
+  border: none;
+  height: 40px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+
+  svg {
+    width: 18px;
+  }
+
+  &:has(svg):not(.icon) {
+    padding-left: 16px;
+    padding-right: 24px;
+  }
+
+  &.primary {
+    color: var(--on-primary);
+    background-color: var(--primary);
+
+    svg {
+      fill: var(--on-primary);
+    }
+  }
+
+  &.secondary {
+    color: var(--on-secondary-container);
+    background-color: var(--secondary-container);
+
+    svg {
+      fill: var(--on-secondary-container);
+    }
+  }
+
+  &.icon {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--surface-container);
+
+    svg {
+      width: 24px;
+      fill: var(--primary);
+    }
+  }
+}
+
+body {
+  color: var(--on-surface);
+  background-color: var(--surface);
+  font-family: var(--font-family-base);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  main {
+    flex-grow: 2;
+  }
+}
+
+main,
+nav,
+footer {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+}
+
+::selection {
+  background-color: var(--primary-container);
+}
+
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+  main,
+  nav,
+  footer {
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* hide number input arrows */
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

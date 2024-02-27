@@ -1,0 +1,29 @@
+.exceptions {
+  h1,
+  p {
+    color: var(--error);
+  }
+
+  pre {
+    background-color: var(--error-container);
+    color: var(--on-error-container);
+    border-radius: 20px;
+    padding: 10px;
+    text-wrap: wrap;
+    overflow-x: scroll;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    pre {
+      padding: 20px;
+    }
+  }
+}
