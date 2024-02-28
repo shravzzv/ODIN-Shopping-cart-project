@@ -1,6 +1,108 @@
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  background-color: var(--surface);
+  color: var(--primary);
+  padding: 10px 0;
+
+  &.floating {
+    background-color: var(--surface-container);
+    padding: 0;
+    border-radius: 9999px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    transition: background-color 300ms ease-in-out;
+    border: 2px solid transparent;
+
+    & svg {
+      fill: var(--primary);
+    }
+
+    .badgeContainer {
+      background-color: var(--error);
+      border-radius: 9999px;
+      padding: 4px;
+
+      span {
+        color: var(--on-error);
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &.active {
+      background-color: var(--secondary-container);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  /* mobile exclusive */
+  nav {
+    a {
+      flex-direction: column;
+      position: relative;
+
+      > span {
+        font-size: 0.75rem;
+      }
+
+      .badgeContainer {
+        position: absolute;
+        top: 0;
+        left: 50%;
+      }
+    }
+
+    &.floating {
+      bottom: 20px;
+      -webkit-animation: slide-in-bottom 0.5s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    a {
+      padding: 20px 30px;
+      gap: 5px;
+    }
+
+    &.floating {
+      top: 10px;
+      -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+      animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    a {
+      &:hover {
+        border-color: var(--primary);
+      }
+    }
+  }
 }
