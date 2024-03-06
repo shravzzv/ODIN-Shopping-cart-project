@@ -1,0 +1,29 @@
+.home {
+  h2 {
+    color: var(--primary);
+  }
+
+  .featuredContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .featuredContainer {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .featuredContainer {
+    .card {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+}
