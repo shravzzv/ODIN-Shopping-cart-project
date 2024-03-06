@@ -1,0 +1,29 @@
+.card.product {
+  color: var(--on-surface);
+  text-align: center;
+
+  img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0 16px 5px;
+
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}

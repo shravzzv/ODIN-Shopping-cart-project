@@ -37,43 +37,117 @@ input {
 }
 
 button {
-  border: none;
+  font-size: 14px;
   height: 40px;
+  border-radius: 20px;
   padding: 0 24px;
-  border-radius: 9999px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  border: none;
   cursor: pointer;
+  background-color: var(--surface-container);
+  color: var(--on-surface-variant);
+  position: relative;
 
-  svg {
-    width: 18px;
+  /* the state layer */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0%;
+    background-color: var(--on-surface-variant);
+    transition: opacity 300ms ease;
   }
 
-  &:has(svg):not(.icon) {
+  &:has(svg) {
     padding-left: 16px;
-    padding-right: 24px;
-  }
 
-  &.primary {
-    color: var(--on-primary);
-    background-color: var(--primary);
-
-    svg {
-      fill: var(--on-primary);
+    & svg {
+      width: 18px;
+      fill: var(--on-surface);
     }
   }
 
-  &.secondary {
-    color: var(--on-secondary-container);
-    background-color: var(--secondary-container);
+  &.elevated {
+    background-color: var(--surface-container-low);
+    color: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px;
+    transition: box-shadow 300ms ease;
 
-    svg {
+    & svg {
+      fill: var(--primary);
+    }
+
+    &::after {
+      background-color: var(--primary);
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+    }
+  }
+
+  &.filled {
+    background-color: var(--primary);
+    color: var(--on-primary);
+
+    & svg {
+      fill: var(--on-primary);
+    }
+
+    &::after {
+      background-color: var(--on-primary);
+    }
+  }
+
+  &.filled-tonal {
+    background-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+    transition: box-shadow 300ms ease;
+
+    & svg {
       fill: var(--on-secondary-container);
+    }
+
+    &::after {
+      background-color: var(--on-secondary-container);
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px;
+    }
+  }
+
+  &.outlined {
+    background-color: var(--surface);
+    color: var(--primary);
+    outline: 1px solid var(--outline);
+
+    & svg {
+      fill: var(--primary);
+    }
+
+    &::after {
+      background-color: var(--primary);
+    }
+  }
+
+  &.text {
+    background-color: transparent;
+    color: var(--primary);
+
+    & svg {
+      fill: var(--primary);
+    }
+
+    &::after {
+      background-color: var(--primary);
     }
   }
 
@@ -89,6 +163,41 @@ button {
       fill: var(--primary);
     }
   }
+
+  &:disabled {
+    opacity: 38%;
+    pointer-events: none;
+  }
+
+  &:hover::after {
+    opacity: 8%;
+  }
+
+  &:focus::after {
+    opacity: 10%;
+  }
+
+  &:active::after {
+    opacity: 10%;
+  }
+
+  &[draggable='true'] {
+    cursor: grab;
+
+    &:active::after {
+      cursor: grabbing;
+      opacity: 16%;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
 }
 
 body {
@@ -105,40 +214,74 @@ body {
 
   main {
     flex-grow: 2;
+    padding: 20px;
+
+    @media (min-width: 768px) {
+      padding: 20px 40px;
+    }
   }
 }
 
-main,
-footer {
-  padding: 20px;
+.card {
+  /* using the material design guildelines https://m3.material.io/components/cards/overview */
+
+  background-color: var(--surface-container);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: box-shadow 300ms ease;
+
+  & svg {
+    fill: var(--primary);
+    width: 24px;
+  }
+
+  & img {
+    border-radius: inherit;
+  }
+
+  &.elevated {
+    background-color: var(--surface-container-low);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+      rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  }
+
+  &.filled {
+    background-color: var(--surface-container-highest);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0.14) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 0px 0px 0px;
+  }
+
+  &.outlined {
+    background-color: var(--surface);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0.14) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 0px 0px 0px;
+    outline: 1px solid var(--outline-variant);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+      rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  }
+
+  &:disabled {
+    background-color: var(--surface);
+  }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family-headings);
+:disabled {
+  pointer-events: none;
+  opacity: 38%;
 }
 
 ::selection {
   background-color: var(--primary-container);
 }
 
-:disabled {
-  cursor: not-allowed;
-  opacity: 0.4;
-}
-
 @media (max-width: 767px) {
 }
 
 @media (min-width: 768px) {
-  main,
-  footer {
-    padding: 20px 40px;
-  }
 }
 
 @media (min-width: 1024px) {

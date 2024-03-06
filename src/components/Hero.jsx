@@ -15,7 +15,7 @@ export default function Hero() {
           special you deserve.
         </p>
         <Link to='/shop'>
-          <button className='primary'>
+          <button className='filled'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               height='24'

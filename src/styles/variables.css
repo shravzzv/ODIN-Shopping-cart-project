@@ -9,6 +9,8 @@
 
   --surface: #fff9ee;
   --surface-container: #f4eddf;
+  --surface-container-low: #faf3e5;
+  --surface-container-highest: #e8e2d4;
   --on-surface: #1e1b13;
   --on-surface-variant: #4b4739;
 
@@ -31,12 +33,17 @@
   --on-error: #ffffff;
   --error-container: #ffdad6;
   --on-error-container: #410002;
+
+  --outline: #7c7767;
+  --outline-variant: #cdc6b4;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --surface: #15130b;
     --surface-container: #222017;
+    --surface-container-low: #1e1b13;
+    --surface-container-highest: #38352b;
     --on-surface: #e8e2d4;
     --on-surface-variant: #cdc6b4;
 
@@ -59,5 +66,8 @@
     --on-error: #690005;
     --error-container: #93000a;
     --on-error-container: #ffdad6;
+
+    --outline: #969080;
+    --outline-variant: #4b4739;
   }
 }
