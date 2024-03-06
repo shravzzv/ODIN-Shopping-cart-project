@@ -1,5 +1,5 @@
 import { describe, test, expect, beforeEach } from 'vitest'
-import Navbar from '../components/Navbar'
+import Navbar from '../../components/Navbar'
 import { screen, render, fireEvent } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
