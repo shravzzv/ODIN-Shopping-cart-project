@@ -26,6 +26,9 @@ export default function Navbar({ cartItemsCount = 10000 }) {
     if (pathname == '/') setActiveLink(1)
     if (pathname == '/shop') setActiveLink(2)
     if (pathname == '/cart') setActiveLink(3)
+    if (!['/', '/shop', '/cart'].includes(pathname)) {
+      setActiveLink(null)
+    }
   }, [pathname])
 
   return (

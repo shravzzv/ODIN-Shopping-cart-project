@@ -226,6 +226,7 @@ body {
   /* using the material design guildelines https://m3.material.io/components/cards/overview */
 
   background-color: var(--surface-container);
+  color: var(--on-surface);
   border-radius: 12px;
   cursor: pointer;
   transition: box-shadow 300ms ease;
