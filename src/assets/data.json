@@ -8,7 +8,8 @@
       "/products/suit1b.webp",
       "/products/suit1c.webp",
       "/products/suit1d.webp"
-    ]
+    ],
+    "price": 599
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
       "/products/suit2b.webp",
       "/products/suit2c.webp",
       "/products/suit2d.webp"
-    ]
+    ],
+    "price": 499
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
       "/products/suit3b.webp",
       "/products/suit3c.webp",
       "/products/suit3d.webp"
-    ]
+    ],
+    "price": 549
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
       "/products/suit4b.webp",
       "/products/suit4c.webp",
       "/products/suit4d.webp"
-    ]
+    ],
+    "price": 699
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
       "/products/suit5b.webp",
       "/products/suit5c.webp",
       "/products/suit5d.webp"
-    ]
+    ],
+    "price": 649
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
       "/products/suit6b.webp",
       "/products/suit6c.webp",
       "/products/suit6d.webp"
-    ]
+    ],
+    "price": 749
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
       "/products/suit7b.webp",
       "/products/suit7c.webp",
       "/products/suit7d.webp"
-    ]
+    ],
+    "price": 599
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
       "/products/suit8b.webp",
       "/products/suit8c.webp",
       "/products/suit8d.webp"
-    ]
+    ],
+    "price": 449
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
       "/products/suit9b.webp",
       "/products/suit9c.webp",
       "/products/suit9d.webp"
-    ]
+    ],
+    "price": 549
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
       "/products/suit10b.webp",
       "/products/suit10c.webp",
       "/products/suit10d.webp"
-    ]
+    ],
+    "price": 699
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
       "/products/suit11b.webp",
       "/products/suit11c.webp",
       "/products/suit11d.webp"
-    ]
+    ],
+    "price": 599
   },
   {
     "id": 12,
@@ -129,18 +140,20 @@
       "/products/suit12b.webp",
       "/products/suit12c.webp",
       "/products/suit12d.webp"
-    ]
+    ],
+    "price": 649
   },
   {
     "id": 13,
-    "title": "Burgundy Double-Breasted Tuxedo",
+    "title": "Burgundy Breasted Tuxedo",
     "description": "Make a bold statement with our Burgundy Double-Breasted Tuxedo, a luxurious ensemble designed for the modern man. Crafted from sumptuous wool fabric, this tuxedo features a rich burgundy hue that exudes sophistication and charm. The double-breasted jacket is adorned with peak lapels, while the matching trousers complete the ensemble with refined elegance. Whether it's a black-tie event or a formal gala, this tuxedo ensures you stand out with effortless style.",
     "images": [
       "/products/suit13a.webp",
       "/products/suit13b.webp",
       "/products/suit13c.webp",
       "/products/suit13d.webp"
-    ]
+    ],
+    "price": 749
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
       "/products/suit14b.webp",
       "/products/suit14c.webp",
       "/products/suit14d.webp"
-    ]
+    ],
+    "price": 799
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
       "/products/suit15b.webp",
       "/products/suit15c.webp",
       "/products/suit15d.webp"
-    ]
+    ],
+    "price": 799
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
       "/products/suit16b.webp",
       "/products/suit16c.webp",
       "/products/suit16d.webp"
-    ]
+    ],
+    "price": 599
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
       "/products/suit17b.webp",
       "/products/suit17c.webp",
       "/products/suit17d.webp"
-    ]
+    ],
+    "price": 549
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
       "/products/suit18b.webp",
       "/products/suit18c.webp",
       "/products/suit18d.webp"
-    ]
+    ],
+    "price": 699
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
       "/products/suit19b.webp",
       "/products/suit19c.webp",
       "/products/suit19d.webp"
-    ]
+    ],
+    "price": 749
   },
   {
     "id": 20,
@@ -217,6 +236,7 @@
       "/products/suit20b.webp",
       "/products/suit20c.webp",
       "/products/suit20d.webp"
-    ]
+    ],
+    "price": 799
   }
 ]
