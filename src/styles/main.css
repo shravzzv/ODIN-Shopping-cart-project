@@ -270,6 +270,19 @@ body {
   }
 }
 
+input[type='radio'] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--primary);
+  background-color: inherit;
+  transition: background-color 300ms ease-in-out;
+
+  &:checked {
+    background-color: var(--primary);
+  }
+}
+
 :disabled {
   pointer-events: none;
   opacity: 38%;
@@ -286,15 +299,4 @@ body {
 }
 
 @media (min-width: 1024px) {
-  /* hide number input arrows */
-  /* Chrome, Safari, Edge, Opera */
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  /* Firefox */
-  input[type='number'] {
-    -moz-appearance: textfield;
-  }
 }

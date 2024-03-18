@@ -3,6 +3,13 @@ import { screen, render } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import ProductCard from '../../components/ProductCard.jsx'
 
+const images = [
+  '/products/suit1a.webp',
+  '/products/suit1b.webp',
+  '/products/suit1c.webp',
+  '/products/suit1d.webp',
+]
+
 describe('ProductCard', () => {
   describe('should have the correct structure', () => {
     beforeEach(() => {
@@ -10,8 +17,9 @@ describe('ProductCard', () => {
         <MemoryRouter>
           <ProductCard
             id={1}
-            imgSrc='/products/suit1a.webp'
             title='Midnight Blue Tuxedo'
+            images={images}
+            price={499}
           />
         </MemoryRouter>
       )

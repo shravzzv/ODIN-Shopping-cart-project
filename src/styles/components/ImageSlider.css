@@ -1,0 +1,30 @@
+.imageSlider {
+  border-radius: 12px;
+  overflow: hidden;
+
+  .slides {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: transform 300ms ease;
+
+    img {
+      border-radius: inherit;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.sliderNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 15px 0;
+}
+
+/* This component renders when the screen width is <= 767px only */
