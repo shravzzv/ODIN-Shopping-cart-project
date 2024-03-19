@@ -2,6 +2,7 @@
   h1,
   p {
     color: var(--error);
+    text-align: center;
   }
 
   pre {
@@ -21,7 +22,17 @@
     }
   }
 
-  @media (min-width: 768px) {
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .exceptions {
     pre {
       padding: 20px;
     }
