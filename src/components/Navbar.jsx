@@ -16,6 +16,7 @@ export default function Navbar({ cartItemsCount = 10000 }) {
     const handleScroll = () => {
       window.scrollY == 0 ? setIsFloating(false) : setIsFloating(true)
     }
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)

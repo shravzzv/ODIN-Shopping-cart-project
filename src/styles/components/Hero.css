@@ -3,6 +3,10 @@
     h1 {
       color: var(--primary);
     }
+
+    a {
+      display: inline-block;
+    }
   }
 }
 
