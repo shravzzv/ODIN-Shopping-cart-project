@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 Navbar.propTypes = {
-  cartItemsCount: PropTypes.number,
+  cartItemsCount: PropTypes.number.isRequired,
 }
 
-export default function Navbar({ cartItemsCount = 10000 }) {
+export default function Navbar({ cartItemsCount }) {
   const [activeLink, setActiveLink] = useState(1)
   const [isFloating, setIsFloating] = useState(false)
   const { pathname } = useLocation()

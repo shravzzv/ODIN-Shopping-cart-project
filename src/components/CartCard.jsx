@@ -8,10 +8,18 @@ CartCard.propTypes = {
   image: PropTypes.string.isRequired,
   quantity: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
+  remove: PropTypes.func.isRequired,
 }
 
-export default function CartCard({ id, image, title, quantity, price }) {
-  const handleRemove = () => {}
+export default function CartCard({
+  id,
+  image,
+  title,
+  quantity,
+  price,
+  remove,
+}) {
+  const handleRemove = () => remove(id)
 
   return (
     <div className='card elevated cartCard'>
