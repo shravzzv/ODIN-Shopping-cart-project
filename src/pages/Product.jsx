@@ -76,7 +76,10 @@ export default function Product({ cartItems, addToCart }) {
             name='quantity'
             min='1'
             value={quantity}
-            onChange={(e) => setQuantity(parseInt(e.target.value))}
+            onChange={(e) => {
+              let value = parseInt(e.target.value)
+              setQuantity(value < 1 ? 1 : value)
+            }}
             disabled={isInCart}
           />
           <button
