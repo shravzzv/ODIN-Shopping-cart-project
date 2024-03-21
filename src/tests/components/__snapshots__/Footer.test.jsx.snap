@@ -1,0 +1,132 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > should show info and links 1`] = `
+<div>
+  <footer>
+    <div
+      class="custom-shape-divider-top-1709957664"
+    >
+      <svg
+        data-name="Layer 1"
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="shape-fill"
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        />
+      </svg>
+    </div>
+    <div
+      class="info"
+    >
+      <h2>
+        Mock Shopping Cart
+      </h2>
+      <p>
+        This project was an assignment from the
+         
+        <a
+          href="https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart"
+          target="_blank"
+        >
+          The Odin Project
+        </a>
+        .
+      </p>
+    </div>
+    <div
+      class="tools"
+    >
+      <h3>
+        Built using:
+      </h3>
+      <ul>
+        <li>
+          React
+        </li>
+        <li>
+          Vite
+        </li>
+      </ul>
+    </div>
+    <div
+      class="links"
+    >
+      <h3>
+        Links
+      </h3>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/shop"
+          >
+            Shop
+          </a>
+        </li>
+        <li>
+          <a
+            href="/cart"
+          >
+            Cart
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a
+      href="https://www.github.com/shravzzv/odin-shopping-cart-project"
+      target="_blank"
+    >
+      <p
+        class="repo"
+      >
+        <svg
+          height="24"
+          version="1.1"
+          viewBox="0 0 20 20"
+          width="24"
+        >
+          <title>
+            Go to the respository
+          </title>
+          <defs />
+          <g
+            id="Page-1"
+            stroke="none"
+          >
+            <g
+              id="Dribbble-Light-Preview"
+              transform="translate(-140.000000, -7559.000000)"
+            >
+              <g
+                id="icons"
+                transform="translate(56.000000, 160.000000)"
+              >
+                <path
+                  d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+        Give this repo a star on Github or submit an Issue
+      </p>
+    </a>
+    <div
+      class="legal"
+    >
+      <p>
+        © Sai Shravan Vadla, 2024
+      </p>
+    </div>
+  </footer>
+</div>
+`;

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "title": "Midnight Black Tuxedo",
+    "description": "Elevate your formal attire with our Midnight Black Tuxedo, meticulously crafted with premium wool fabric to ensure both style and comfort. This timeless ensemble features a sleek single-breasted jacket with satin peak lapels, paired with matching trousers for a sophisticated look. Whether it's a black-tie event or a formal dinner party, this tuxedo exudes elegance and refinement at every turn.",
+    "images": [
+      "/products/suit1a.webp",
+      "/products/suit1b.webp",
+      "/products/suit1c.webp",
+      "/products/suit1d.webp"
+    ],
+    "price": 599
+  },
+  {
+    "id": 2,
+    "title": "Satin Blue Suit",
+    "description": "Step into the realm of sophistication with our Satin Blue Suit, expertly tailored for the modern gentleman. Made from high-quality wool blend fabric, this suit boasts a refined silhouette that exudes confidence and style. The classic two-button jacket is complemented by flat-front trousers, offering versatility for both formal and semi-formal occasions. From business meetings to evening galas, this suit is sure to leave a lasting impression.",
+    "images": [
+      "/products/suit2a.webp",
+      "/products/suit2b.webp",
+      "/products/suit2c.webp",
+      "/products/suit2d.webp"
+    ],
+    "price": 499
+  },
+  {
+    "id": 3,
+    "title": "Navy Black Pinstripe Suit",
+    "description": "Make a statement with our Navy Black Pinstripe Suit, a classic ensemble designed for the discerning gentleman. Crafted from luxurious wool fabric, this suit features subtle pinstripes that add a touch of sophistication to your look. The single-breasted jacket is impeccably tailored for a flattering fit, while the matching trousers complete the ensemble with timeless elegance. Whether it's a business meeting or a formal event, this suit ensures you always look sharp and polished.",
+    "images": [
+      "/products/suit3a.webp",
+      "/products/suit3b.webp",
+      "/products/suit3c.webp",
+      "/products/suit3d.webp"
+    ],
+    "price": 549
+  },
+  {
+    "id": 4,
+    "title": "Burgundy Velvet Tuxedo",
+    "description": "Indulge in luxury with our Burgundy Velvet Tuxedo, a sartorial masterpiece that exudes opulence and sophistication. Crafted from sumptuous velvet fabric, this tuxedo features a rich burgundy hue that commands attention. The double-breasted jacket is adorned with satin peak lapels, adding a touch of refinement to the ensemble. Paired with matching trousers, this tuxedo is perfect for black-tie events, weddings, and gala receptions where style is paramount.",
+    "images": [
+      "/products/suit4a.webp",
+      "/products/suit4b.webp",
+      "/products/suit4c.webp",
+      "/products/suit4d.webp"
+    ],
+    "price": 699
+  },
+  {
+    "id": 5,
+    "title": "Slate Gray Three-Piece Suit",
+    "description": "Embrace sophistication with our Slate Gray Three-Piece Suit, a versatile ensemble that combines style with functionality. Crafted from premium wool blend fabric, this suit features a tailored fit that flatters every silhouette. The single-breasted jacket is paired with a matching waistcoat, adding a touch of elegance to your look. Complete with flat-front trousers, this ensemble is perfect for weddings, business conferences, and special occasions where impeccable style is a must.",
+    "images": [
+      "/products/suit5a.webp",
+      "/products/suit5b.webp",
+      "/products/suit5c.webp",
+      "/products/suit5d.webp"
+    ],
+    "price": 649
+  },
+  {
+    "id": 6,
+    "title": "Black Velvet Dinner Suit",
+    "description": "Make a bold statement with our Black Velvet Dinner Suit, a luxurious piece that exudes sophistication and charm. Crafted from plush velvet fabric, this dinner jacket features a sleek silhouette with satin peak lapels, offering a modern twist on classic formalwear. Whether it's a gala dinner or a black-tie event, this jacket ensures you stand out from the crowd with effortless style and elegance.",
+    "images": [
+      "/products/suit6a.webp",
+      "/products/suit6b.webp",
+      "/products/suit6c.webp",
+      "/products/suit6d.webp"
+    ],
+    "price": 749
+  },
+  {
+    "id": 7,
+    "title": "Royal Blue Double-Breasted Suit",
+    "description": "Command attention with our Royal Blue Double-Breasted Suit, a regal ensemble designed for the modern gentleman. Crafted from premium wool fabric, this suit features a striking royal blue hue that exudes confidence and sophistication. The double-breasted jacket is accentuated by peak lapels, while the matching trousers complete the look with tailored perfection. Whether it's a wedding or a formal event, this suit ensures you make a lasting impression.",
+    "images": [
+      "/products/suit7a.webp",
+      "/products/suit7b.webp",
+      "/products/suit7c.webp",
+      "/products/suit7d.webp"
+    ],
+    "price": 599
+  },
+  {
+    "id": 8,
+    "title": "Light Brown Linen Suit",
+    "description": "Stay cool and stylish with our Light Brown Linen Suit, perfect for warm-weather occasions and outdoor events. Crafted from breathable linen fabric, this suit features a relaxed yet refined silhouette that exudes effortless charm. The single-breasted jacket is paired with flat-front trousers, offering a versatile and comfortable ensemble for weddings, garden parties, and summer soirees.",
+    "images": [
+      "/products/suit8a.webp",
+      "/products/suit8b.webp",
+      "/products/suit8c.webp",
+      "/products/suit8d.webp"
+    ],
+    "price": 449
+  },
+  {
+    "id": 9,
+    "title": "Navy Blue Wool Suit",
+    "description": "Exude timeless elegance with our Navy Blue Wool Suit, a classic ensemble designed for the modern gentleman. Crafted from high-quality wool fabric, this suit features a versatile navy blue hue that transitions effortlessly from day to night. The single-breasted jacket is tailored for a flattering fit, while the matching trousers complete the ensemble with refined sophistication. Whether it's a business meeting or a formal event, this suit ensures you always look polished and put together.",
+    "images": [
+      "/products/suit9a.webp",
+      "/products/suit9b.webp",
+      "/products/suit9c.webp",
+      "/products/suit9d.webp"
+    ],
+    "price": 549
+  },
+  {
+    "id": 10,
+    "title": "Black Pinstripe Tuxedo",
+    "description": "Make a statement with our Black Pinstripe Tuxedo, a timeless ensemble designed for the modern man. Crafted from premium wool blend fabric, this tuxedo features subtle pinstripes that add a touch of sophistication to your look. The single-breasted jacket is adorned with satin peak lapels, while the matching trousers complete the ensemble with tailored perfection. Whether it's a black-tie event or a formal dinner party, this tuxedo ensures you look impeccable from head to toe.",
+    "images": [
+      "/products/suit10a.webp",
+      "/products/suit10b.webp",
+      "/products/suit10c.webp",
+      "/products/suit10d.webp"
+    ],
+    "price": 699
+  },
+  {
+    "id": 11,
+    "title": "Charcoal Black Suit",
+    "description": "Make a stylish statement with our Charcoal Black Suit, a contemporary ensemble that combines classic style with modern sophistication. Crafted from premium wool fabric, this suit features a subtle checkered pattern that adds visual interest to your look. The single-breasted jacket is tailored for a flattering fit, while the matching trousers complete the ensemble with refined elegance. Whether it's a business meeting or a formal event, this suit ensures you stand out with effortless charm.",
+    "images": [
+      "/products/suit11a.webp",
+      "/products/suit11b.webp",
+      "/products/suit11c.webp",
+      "/products/suit11d.webp"
+    ],
+    "price": 599
+  },
+  {
+    "id": 12,
+    "title": "Navy Blue Plaid Suit",
+    "description": "Elevate your style with our Navy Blue Plaid Suit, a sophisticated ensemble designed for the modern gentleman. Crafted from premium wool fabric, this suit features a timeless plaid pattern that adds visual interest to your look. The single-breasted jacket is tailored for a flattering fit, while the matching trousers complete the ensemble with refined elegance. Whether it's a business meeting or a formal event, this suit ensures you make a lasting impression with your impeccable style.",
+    "images": [
+      "/products/suit12a.webp",
+      "/products/suit12b.webp",
+      "/products/suit12c.webp",
+      "/products/suit12d.webp"
+    ],
+    "price": 649
+  },
+  {
+    "id": 13,
+    "title": "Burgundy Breasted Tuxedo",
+    "description": "Make a bold statement with our Burgundy Double-Breasted Tuxedo, a luxurious ensemble designed for the modern man. Crafted from sumptuous wool fabric, this tuxedo features a rich burgundy hue that exudes sophistication and charm. The double-breasted jacket is adorned with peak lapels, while the matching trousers complete the ensemble with refined elegance. Whether it's a black-tie event or a formal gala, this tuxedo ensures you stand out with effortless style.",
+    "images": [
+      "/products/suit13a.webp",
+      "/products/suit13b.webp",
+      "/products/suit13c.webp",
+      "/products/suit13d.webp"
+    ],
+    "price": 749
+  },
+  {
+    "id": 14,
+    "title": "Sapphire Blue Velvet Tuxedo",
+    "description": "Make a statement with our Sapphire Blue Velvet Tuxedo, a luxurious ensemble designed for the modern gentleman. Crafted from sumptuous velvet fabric, this tuxedo features a striking sapphire blue hue that commands attention. The single-breasted jacket is adorned with satin peak lapels, while the matching trousers complete the ensemble with refined elegance. Whether it's a black-tie event or a formal gala, this tuxedo ensures you stand out with effortless style.",
+    "images": [
+      "/products/suit14a.webp",
+      "/products/suit14b.webp",
+      "/products/suit14c.webp",
+      "/products/suit14d.webp"
+    ],
+    "price": 799
+  },
+  {
+    "id": 15,
+    "title": "White Satin Lapel Tuxedo",
+    "description": "Step into the spotlight with our White Satin Lapel Tuxedo, a timeless ensemble designed for the modern man. Crafted from premium wool fabric, this tuxedo features sleek satin lapels that add a touch of refinement to your look. The single-breasted jacket is paired with matching trousers, offering a tailored fit that exudes sophistication. Whether it's a black-tie event or a formal dinner party, this tuxedo ensures you look impeccable from head to toe.",
+    "images": [
+      "/products/suit15a.webp",
+      "/products/suit15b.webp",
+      "/products/suit15c.webp",
+      "/products/suit15d.webp"
+    ],
+    "price": 799
+  },
+  {
+    "id": 16,
+    "title": "Beige Double-Breasted Suit",
+    "description": "Make a stylish statement with our Beige Double-Breasted Suit, a contemporary ensemble designed for the modern gentleman. Crafted from premium wool fabric, this suit features a versatile navy blue hue that transitions seamlessly from day to night. The double-breasted jacket is tailored for a flattering fit, while the matching trousers complete the ensemble with refined elegance. Whether it's a business meeting or a formal event, this suit ensures you look polished and put together.",
+    "images": [
+      "/products/suit16a.webp",
+      "/products/suit16b.webp",
+      "/products/suit16c.webp",
+      "/products/suit16d.webp"
+    ],
+    "price": 599
+  },
+  {
+    "id": 17,
+    "title": "Light Brown Tweed Suit",
+    "description": "Stay stylish and sophisticated with our Light Brown Tweed Suit, perfect for both formal and casual occasions. Crafted from premium tweed fabric, this suit features a subtle herringbone pattern that adds texture and dimension to your look. The single-breasted jacket is tailored for a flattering fit, while the matching trousers complete the ensemble with timeless elegance. Whether it's a wedding or a business conference, this suit ensures you always look your best.",
+    "images": [
+      "/products/suit17a.webp",
+      "/products/suit17b.webp",
+      "/products/suit17c.webp",
+      "/products/suit17d.webp"
+    ],
+    "price": 549
+  },
+  {
+    "id": 18,
+    "title": "Black Velvet Smoking Jacket",
+    "description": "Make a statement with our Black Velvet Smoking Jacket, a luxurious piece that exudes sophistication and charm. Crafted from plush velvet fabric, this smoking jacket features a sleek silhouette with satin shawl lapels, offering a modern twist on classic formalwear. Whether it's a cocktail party or a soirée, this jacket ensures you stand out from the crowd with effortless style and elegance.",
+    "images": [
+      "/products/suit18a.webp",
+      "/products/suit18b.webp",
+      "/products/suit18c.webp",
+      "/products/suit18d.webp"
+    ],
+    "price": 699
+  },
+  {
+    "id": 19,
+    "title": "Black Long Coat Suit",
+    "description": "Elevate your wardrobe with our Black Long Coat Suit, a versatile ensemble designed for the modern gentleman. Crafted from premium wool fabric, this suit features a rich dark brown hue that exudes sophistication and elegance. The single-breasted jacket is tailored for a flattering fit, while the matching trousers complete the ensemble with timeless style. Whether it's a business meeting or a formal event, this suit ensures you always look polished and put together.",
+    "images": [
+      "/products/suit19a.webp",
+      "/products/suit19b.webp",
+      "/products/suit19c.webp",
+      "/products/suit19d.webp"
+    ],
+    "price": 749
+  },
+  {
+    "id": 20,
+    "title": "Burgundy Velvet Dinner Jacket",
+    "description": "Make a bold statement with our Burgundy Velvet Dinner Jacket, a luxurious piece that exudes sophistication and charm. Crafted from plush velvet fabric, this dinner jacket features a rich burgundy hue that commands attention. Whether it's a black-tie event or a formal gala, this jacket ensures you stand out from the crowd with effortless style and elegance.",
+    "images": [
+      "/products/suit20a.webp",
+      "/products/suit20b.webp",
+      "/products/suit20c.webp",
+      "/products/suit20d.webp"
+    ],
+    "price": 799
+  }
+]

@@ -1,0 +1,48 @@
+.hero {
+  .text {
+    h1 {
+      color: var(--primary);
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    .imageContainer {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    > * {
+      flex: 1;
+    }
+
+    .imageContainer {
+      img {
+        border-radius: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    .text {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

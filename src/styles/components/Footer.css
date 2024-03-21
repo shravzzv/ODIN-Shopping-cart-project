@@ -1,0 +1,79 @@
+footer {
+  padding: 40px 20px;
+  background-color: var(--surface-container);
+  position: relative;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  svg {
+    fill: var(--on-surface);
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+  .repo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  li + li {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 100px 40px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+/* footer curve from https://www.shapedivider.app/ */
+
+.custom-shape-divider-top-1709957664 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1709957664 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 161px;
+}
+
+.custom-shape-divider-top-1709957664 .shape-fill {
+  fill: var(--surface);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1709957664 svg {
+    width: calc(100% + 1.3px);
+    height: 44px;
+  }
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) {
+  .custom-shape-divider-top-1709957664 svg {
+    width: calc(100% + 1.3px);
+    height: 101px;
+  }
+}

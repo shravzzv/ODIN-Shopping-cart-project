@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Cart card > should display the quantity as 999+ if the quantity is > 999 1`] = `
+<div>
+  <div
+    class="card elevated cartCard"
+  >
+    <a
+      href="/product/1"
+    >
+      <img
+        alt="Midnight Black Tuxedo"
+        src="/products/suit1a.webp"
+      />
+    </a>
+    <div
+      class="content"
+    >
+      <h1
+        class="title"
+      >
+        Midnight Black Tuxedo
+      </h1>
+      <p
+        class="price"
+      >
+        $
+        1198000
+      </p>
+      <button
+        class="filled-tonal"
+      >
+        Remove
+      </button>
+      <div
+        class="badgeContainer"
+      >
+        <span
+          class="badgeLabel"
+        >
+          999+
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
