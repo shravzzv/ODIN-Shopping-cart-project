@@ -25,6 +25,7 @@ exports[`Cart card > should display the quantity as 999+ if the quantity is > 99
         class="price"
       >
         $
+        1198000
       </p>
       <button
         class="filled-tonal"

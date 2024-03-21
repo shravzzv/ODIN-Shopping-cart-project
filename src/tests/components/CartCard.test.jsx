@@ -11,7 +11,7 @@ describe('Cart card', () => {
           id={1}
           image='/products/suit1a.webp'
           title='Midnight Black Tuxedo'
-          quantity={2}
+          quantity={1}
           price={599}
         />
       </MemoryRouter>
@@ -25,8 +25,8 @@ describe('Cart card', () => {
     expect(screen.getByText('$599')).toBeInTheDocument()
     expect(screen.getByText('$599')).toHaveClass('price')
 
-    expect(screen.getByText('2')).toBeInTheDocument()
-    expect(screen.getByText('2')).toHaveClass('badgeLabel')
+    expect(screen.getByText('1')).toBeInTheDocument()
+    expect(screen.getByText('1')).toHaveClass('badgeLabel')
 
     expect(screen.getByRole('button', { name: /remove/i })).toBeInTheDocument()
   })
@@ -39,6 +39,7 @@ describe('Cart card', () => {
           image='/products/suit1a.webp'
           title='Midnight Black Tuxedo'
           quantity={2000}
+          price={599}
         />
       </MemoryRouter>
     )

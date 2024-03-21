@@ -20,7 +20,7 @@ export default function CartCard({ id, image, title, quantity, price }) {
       </Link>
       <div className='content'>
         <h1 className='title'>{title}</h1>
-        <p className='price'>${price}</p>
+        <p className='price'>${price * quantity}</p>
         <button className='filled-tonal' onClick={handleRemove}>
           Remove
         </button>
