@@ -8,14 +8,26 @@ ProductCard.propTypes = {
   title: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(PropTypes.string).isRequired,
   price: PropTypes.number.isRequired,
+  isInCart: PropTypes.bool.isRequired,
+  addToCart: PropTypes.func.isRequired,
 }
 
-export default function ProductCard({ id, title, images, price }) {
+export default function ProductCard({
+  id,
+  title,
+  images,
+  price,
+  isInCart,
+  addToCart,
+}) {
   const { pathname } = useLocation()
   const [imgSrc, setImgSrc] = useState(images[3])
 
-  const addToCart = (e) => {
+  const handleAddToCart = (e) => {
+    // this is to prevent the button click to be interpreted as a link click since the whole card is a link; e.stopPropagation() doesn't prevent this!
     e.preventDefault()
+
+    addToCart(id, 1)
   }
 
   return (
@@ -30,8 +42,12 @@ export default function ProductCard({ id, title, images, price }) {
         <div className='content'>
           <p className='title'>{title}</p>
           {pathname === '/shop' && <p>$ {price}</p>}
-          <button className='text' onClick={addToCart}>
-            Add to cart
+          <button
+            className='text'
+            onClick={handleAddToCart}
+            disabled={isInCart}
+          >
+            {isInCart ? 'Added' : 'Add'} to cart
           </button>
         </div>
       </div>

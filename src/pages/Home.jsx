@@ -2,8 +2,14 @@ import Hero from '../components/Hero'
 import ProductCard from '../components/ProductCard'
 import '../styles/pages/Home.css'
 import products from '../assets/data.json'
+import PropTypes from 'prop-types'
 
-export default function Home() {
+Home.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+  addToCart: PropTypes.func.isRequired,
+}
+
+export default function Home({ cartItems, addToCart }) {
   return (
     <main className='home'>
       <Hero />
@@ -16,6 +22,8 @@ export default function Home() {
             title={title}
             images={images}
             price={price}
+            isInCart={cartItems.some((item) => item.id === id)}
+            addToCart={addToCart}
           />
         ))}
       </div>

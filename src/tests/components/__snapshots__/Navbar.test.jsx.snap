@@ -72,7 +72,7 @@ exports[`Navbar > should have the correct functionality > should be floating whe
               class="badgeLabel"
               data-testid="badgeLabel"
             >
-              999+
+              1
             </span>
           </div>
         </a>
@@ -389,7 +389,7 @@ exports[`Navbar > should have the correct functionality > should show the active
               class="badgeLabel"
               data-testid="badgeLabel"
             >
-              999+
+              1
             </span>
           </div>
         </a>

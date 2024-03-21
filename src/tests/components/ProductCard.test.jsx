@@ -1,4 +1,4 @@
-import { describe, test, expect, beforeEach } from 'vitest'
+import { describe, test, expect, beforeEach, vi } from 'vitest'
 import { screen, render } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import ProductCard from '../../components/ProductCard.jsx'
@@ -10,6 +10,8 @@ const images = [
   '/products/suit1d.webp',
 ]
 
+const addToCart = vi.fn()
+
 describe('ProductCard', () => {
   describe('should have the correct structure', () => {
     beforeEach(() => {
@@ -20,6 +22,8 @@ describe('ProductCard', () => {
             title='Midnight Blue Tuxedo'
             images={images}
             price={499}
+            isInCart={false}
+            addToCart={addToCart}
           />
         </MemoryRouter>
       )

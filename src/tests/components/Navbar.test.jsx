@@ -1,4 +1,4 @@
-import { describe, test, expect, beforeEach } from 'vitest'
+import { describe, test, expect } from 'vitest'
 import Navbar from '../../components/Navbar'
 import { screen, render, fireEvent } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
@@ -6,19 +6,22 @@ import { MemoryRouter } from 'react-router-dom'
 
 describe('Navbar', () => {
   describe('should have the correct structure', () => {
-    beforeEach(() => {
+    test('should show three links', () => {
       render(
         <MemoryRouter>
-          <Navbar />
+          <Navbar cartItemsCount={1} />
         </MemoryRouter>
       )
-    })
-
-    test('should show three links', () => {
       expect(screen.getAllByRole('link')).toHaveLength(3)
     })
 
     test('the three links should be for home, shop and cart', () => {
+      render(
+        <MemoryRouter>
+          <Navbar cartItemsCount={1} />
+        </MemoryRouter>
+      )
+
       const homeLink = screen.getByRole('link', { name: /home/i })
       const shopLink = screen.getByRole('link', { name: /shop/i })
       const cartLink = screen.getByRole('link', { name: /cart/i })
@@ -38,7 +41,7 @@ describe('Navbar', () => {
 
       const { container } = render(
         <MemoryRouter>
-          <Navbar />
+          <Navbar cartItemsCount={1} />
         </MemoryRouter>
       )
 
@@ -71,7 +74,7 @@ describe('Navbar', () => {
     test('should be floating when the window is scrolled', async () => {
       const { container } = render(
         <MemoryRouter>
-          <Navbar />
+          <Navbar cartItemsCount={1} />
         </MemoryRouter>
       )
 

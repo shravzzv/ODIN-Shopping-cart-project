@@ -45,11 +45,13 @@ vi.mock('../../components/CartCard.jsx', () => ({
   default: vitest.fn(() => <div>Mocked CartCard</div>),
 }))
 
+const removeFromCart = vi.fn()
+
 describe('Cart', () => {
   test('should display cart items, amount and the checkout button when cart items length > 0', () => {
     render(
       <MemoryRouter>
-        <Cart items={cartItems} />
+        <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       </MemoryRouter>
     )
 
@@ -68,7 +70,7 @@ describe('Cart', () => {
   test('should display a link to shop when there are no cart items', () => {
     render(
       <MemoryRouter>
-        <Cart items={[]} />
+        <Cart cartItems={[]} removeFromCart={removeFromCart} />
       </MemoryRouter>
     )
 
@@ -76,5 +78,7 @@ describe('Cart', () => {
       'href',
       '/shop'
     )
+
+    vi.clearAllMocks()
   })
 })

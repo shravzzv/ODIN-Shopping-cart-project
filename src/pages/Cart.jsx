@@ -3,67 +3,20 @@ import PropTypes from 'prop-types'
 import '../styles/pages/Cart.css'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-
-const cartItems = [
-  {
-    id: 1,
-    title: 'Midnight Black Tuxedo',
-    quantity: 2,
-    image: '/products/suit1a.webp',
-    price: 599,
-  },
-  {
-    id: 2,
-    title: 'Satin Blue Suit',
-    quantity: 9,
-    image: '/products/suit2a.webp',
-    price: 499,
-  },
-  {
-    id: 3,
-    title: 'Navy Black Pinstripe Suit',
-    quantity: 2,
-    image: '/products/suit3a.webp',
-    price: 549,
-  },
-  {
-    id: 4,
-    title: 'Burgundy Velvet Tuxedo',
-    quantity: 1,
-    image: '/products/suit4a.webp',
-    price: 699,
-  },
-  {
-    id: 5,
-    title: 'Slate Gray Three-Piece Suit',
-    quantity: 2,
-    image: '/products/suit5a.webp',
-    price: 649,
-  },
-  {
-    id: 6,
-    title: 'Black Velvet Dinner Suit',
-    quantity: 1,
-    image: '/products/suit6a.webp',
-    price: 749,
-  },
-  {
-    id: 7,
-    title: 'Black Velvet Dinner Suit',
-    quantity: 1,
-    image: '/products/suit7a.webp',
-    price: 599,
-  },
-]
-
-// cartItems.length = 0
+import products from '../assets/data.json'
 
 Cart.propTypes = {
-  items: PropTypes.array,
+  cartItems: PropTypes.array.isRequired,
+  removeFromCart: PropTypes.func.isRequired,
 }
 
-export default function Cart({ items = cartItems }) {
+export default function Cart({ cartItems, removeFromCart }) {
   const [isNavbarFloating, setIsNavbarFloating] = useState(false)
+
+  const currentItems = cartItems.map((item) => ({
+    ...item,
+    ...products.find((product) => product.id === item.id),
+  }))
 
   const handleCheckout = () => {}
 
@@ -84,7 +37,7 @@ export default function Cart({ items = cartItems }) {
 
   return (
     <main className='cart'>
-      {items.length > 0 ? (
+      {currentItems.length > 0 ? (
         <>
           <button
             className={`fab ${isNavbarFloating ? 'floating' : ''}`}
@@ -105,21 +58,22 @@ export default function Cart({ items = cartItems }) {
             Amount:{' '}
             <span>
               $
-              {cartItems
+              {currentItems
                 .reduce((acc, cv) => acc + cv.price * cv.quantity, 0)
                 .toLocaleString()}
             </span>
           </h1>
 
           <div className='cartItemsContainer'>
-            {items.map(({ id, title, quantity, image, price }) => (
+            {currentItems.map(({ id, title, quantity, images, price }) => (
               <CartCard
                 key={id}
                 id={id}
                 title={title}
                 quantity={quantity}
-                image={image}
+                image={images[0]}
                 price={price}
+                remove={removeFromCart}
               />
             ))}
           </div>
