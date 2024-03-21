@@ -1,7 +1,9 @@
-import { describe, test, expect } from 'vitest'
+import { describe, test, expect, vi } from 'vitest'
 import { screen, render } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import CartCard from '../../components/CartCard'
+
+const remove = vi.fn()
 
 describe('Cart card', () => {
   test('should display an image, a title, a price, a quantity and a remove button', () => {
@@ -13,6 +15,7 @@ describe('Cart card', () => {
           title='Midnight Black Tuxedo'
           quantity={1}
           price={599}
+          remove={remove}
         />
       </MemoryRouter>
     )
@@ -40,6 +43,7 @@ describe('Cart card', () => {
           title='Midnight Black Tuxedo'
           quantity={2000}
           price={599}
+          remove={remove}
         />
       </MemoryRouter>
     )
