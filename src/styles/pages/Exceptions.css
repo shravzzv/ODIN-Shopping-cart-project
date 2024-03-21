@@ -12,6 +12,7 @@
     padding: 10px;
     text-wrap: wrap;
     overflow-x: scroll;
+    max-height: 50vh;
 
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none; /* IE and Edge */
@@ -31,10 +32,16 @@
   }
 }
 
+@media (max-width: 767px) {
+}
+
 @media (min-width: 768px) {
   .exceptions {
     pre {
       padding: 20px;
     }
   }
+}
+
+@media (min-width: 1024px) {
 }
