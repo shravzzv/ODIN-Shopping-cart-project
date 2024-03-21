@@ -3,9 +3,12 @@ import '../styles/pages/Error.css'
 
 export default function Error() {
   return (
-    <main>
-      <h1>Error page</h1>
-      <Link to='/'>Go back to home</Link>
+    <main className='error'>
+      <h1>404</h1>
+      <p>OOPS! There is nothing to see here.</p>
+      <Link to='/' className='homeLink'>
+        Click here to go back to home
+      </Link>
     </main>
   )
 }
