@@ -12,8 +12,7 @@ This project was an [assignment](https://www.theodinproject.com/lessons/node-pat
 
 - Product Listing: Browse through a variety of products, with details like description, price, and images.
 - Cart Management: Add and remove items from your cart, adjust quantities, and view subtotal and total cost.
-- Checkout Functionality: Proceed to a secure checkout process with various payment options (implement as needed).
-- Responsive Design: Optimized for a seamless experience across different devices, from desktops to smartphones.
+- Responsive Material Design: Optimized for a seamless experience across different devices, from desktops to smartphones using the official Google Material design principles.
 
 ## Technologies Used
 

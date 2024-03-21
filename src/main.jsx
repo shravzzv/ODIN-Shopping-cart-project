@@ -9,3 +9,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router />
   </React.StrictMode>
 )
+
+// an easter egg in the console
+console.log(
+  `%cLive long and prosper 🖖`,
+  `
+  font-size: 36px;
+  color: gold;
+  background-color: #000;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+`
+)
