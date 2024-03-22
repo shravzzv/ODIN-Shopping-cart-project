@@ -9,16 +9,22 @@ import Error from './pages/Error'
 import Exceptions from './pages/Exceptions.jsx'
 
 export default function Router() {
-  const [cartItems, setCartItems] = useState([])
+  const [cartItems, setCartItems] = useState(
+    JSON.parse(localStorage.getItem('cartItems')) || []
+  )
 
   const cartItemsCount = cartItems.reduce((acc, cv) => acc + cv.quantity, 0)
 
-  const addToCart = (id, quantity) =>
+  const addToCart = (id, quantity) => {
     cartItems.every((item) => item.id !== id) &&
-    setCartItems((prev) => [...prev, { id, quantity }])
+      setCartItems((prev) => [...prev, { id, quantity }])
+  }
 
-  const removeFromCart = (id) =>
+  const removeFromCart = (id) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id))
+  }
+
+  localStorage.setItem('cartItems', JSON.stringify(cartItems))
 
   const router = createBrowserRouter([
     {
