@@ -53,6 +53,16 @@ export default function Product({ cartItems, addToCart }) {
       <div className='texts'>
         <h1 className='title'>{title}</h1>
         <p className='desc'>{description}</p>
+
+        <label htmlFor='size'>Size: </label>
+        <select name='size' id='size'>
+          <option value='S'>S</option>
+          <option value='M'>M</option>
+          <option value='L'>L</option>
+          <option value='XL'>XL</option>
+          <option value='XXL'>XXL</option>
+        </select>
+
         <p className='price'>$ {price}</p>
 
         <div className='quantitySelector'>
