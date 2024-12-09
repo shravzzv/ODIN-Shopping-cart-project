@@ -63,6 +63,16 @@ export default function Product({ cartItems, addToCart }) {
           <option value='XXL'>XXL</option>
         </select>
 
+        <div className='colour'>
+          <span>Colour: </span>
+          <input type='radio' name='colour' id='black' />
+          <input type='radio' name='colour' id='blue' />
+          <input type='radio' name='colour' id='red' />
+          <input type='radio' name='colour' id='green' />
+          <input type='radio' name='colour' id='pink' />
+          <input type='radio' name='colour' id='brown' />
+        </div>
+
         <p className='price'>$ {price}</p>
 
         <div className='quantitySelector'>

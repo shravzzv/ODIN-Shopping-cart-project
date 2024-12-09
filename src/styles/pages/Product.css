@@ -62,6 +62,54 @@ select {
   cursor: pointer;
 }
 
+.colour {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+
+  input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: 0.2s all linear;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+
+  input[type='radio']:checked {
+    transform: scale(2);
+  }
+
+  input[type='radio']:hover:not(:checked) {
+    transform: scale(1.7);
+  }
+
+  #black {
+    background-color: black;
+  }
+  #blue {
+    background-color: blue;
+  }
+  #red {
+    background-color: red;
+  }
+  #green {
+    background-color: green;
+  }
+  #pink {
+    background-color: pink;
+  }
+  #brown {
+    background-color: brown;
+  }
+}
+
 @media (max-width: 767px) {
 }
 
